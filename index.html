@@ -8,6 +8,19 @@
         <meta charset="utf-8">
         <title>Попытка</title>
         <style>
+		 @media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}
    .colortext {
      color: #ff7f50 
    }
