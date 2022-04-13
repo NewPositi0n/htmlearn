@@ -11,18 +11,19 @@
 		 @media print {
   body { font-size: 10pt }
 }
-@media screen {
-  body { font-size: 13px }
-}
-@media screen, print {
-  body { line-height: 1.2 }
-}
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body { line-height: 1.4 }
-}
+@media (min-width:768px) and (max-width:1365px) {
+                body {background-color: #fff8dc;
+                color: chocolate;}
+                
+            }
+            
+            @media (max-width:757px) {
+                #pagewrap{width: 95%}
+                #content{width: 60%; padding: 3%4%}
+                #sidebar{width: 30%}
+                #sidebar.widget{padding: 8%7%; margin-bottom: 10px}
+                body {background-color: #77dde7}
+            }
    .colortext {
      color: #ff7f50 
    }
