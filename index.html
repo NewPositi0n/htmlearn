@@ -8,18 +8,20 @@
         <meta charset="utf-8">
         <title>Попытка</title>
         <style>
-		 @media screen and (min-width: 900px) {
-  article {
-    padding: 1rem 3rem;
-  }
+		 @media print {
+  body { font-size: 10pt }
 }
-
-@supports (display: flex) {
-  @media screen and (min-width: 900px) {
-    article {
-      display: flex;
-    }
-  }
+@media screen {
+  body { font-size: 13px }
+}
+@media screen, print {
+  body { line-height: 1.2 }
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body { line-height: 1.4 }
 }
    .colortext {
      color: #ff7f50 
