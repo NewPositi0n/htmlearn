@@ -6,7 +6,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
         <meta charset="utf-8">
-	                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <title>Попытка</title>
         <style>
@@ -16,15 +16,21 @@
                 line-height: 1.4;}
             }
             
-            @media only screen and (max-width:757px) {
+            @media (max-width:757px) {
                body {background-color: #77dde7;
                 color: darkred;
                 line-height: 1.4;
-                font-size: 13px;
-                animation-duration: 3s; animation-name: slidein}
+                font-size: 13px;}
             }
-            @keyframes slidein {from {margin-left: 100%;
-                width: 100%}}
+            
+            table {
+                border-collapse: collapse;
+                width: 100%
+            }
+            th, td {
+                text-align: center;
+                padding: 8px;
+            }
    .colortext {
      color: #ff7f50 
    }
@@ -87,15 +93,20 @@
 	text-decoration: none;
             }
             .o5{filter: alpha(Opacity=50);
-                opacity: 0.5;}
+                opacity: 0.5;
+            width: 100%;}
             .roll{background: url(https://i1.sndcdn.com/artworks-000335162463-el6h3u-t500x500.jpg); 
                 display: block; 
                 width: 500px; 
-                height: 500px; 
+                height: 500px;
+                background-repeat: no-repeat;
+                background-size: contain;
                 }
             .roll:hover {
                 background: url(http://pm1.narvii.com/8096/bc6f06fa2d9e22febfa88fa29dceb24f6708d981r1-500-500v2_00.jpg);
-                    }
+                background-repeat: no-repeat;
+            background-size: contain;}
+            
             .mir{transform: scale(-1, 1);}
             
             form{
