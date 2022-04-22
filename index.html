@@ -8,18 +8,21 @@
         <meta charset="utf-8">
         <title>Попытка</title>
         <style>
-            @media only screen and (min-width:768px) and (max-width:2000px) {
+            @media (min-width:768px) and (max-width:2000px) {
                 body {background-color: #fff8dc;
                 color: chocolate;
                 line-height: 1.4;}
-                
             }
             
             @media only screen and (max-width:757px) {
                body {background-color: #77dde7;
                 color: darkred;
-                line-height: 1.4;}
+                line-height: 1.4;
+                font-size: 13px;
+                animation-duration: 3s; animation-name: slidein}
             }
+            @keyframes slidein {from {margin-left: 100%;
+                width: 100%}}
    .colortext {
      color: #ff7f50 
    }
@@ -163,6 +166,45 @@
             .tbl tbody tr:nth-child(even){background: #dcdcdc;}
             .tbl td{text-align:center;}
             
+.button {
+display: inline-block;
+border-radius: 25px;
+background-color: #f4511e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
     </style>
         </head>
     <body>
@@ -369,6 +411,7 @@
 
         <section id="right" class="animate__animated animate__fadeInDown" id="step2">
             <h2 style="color:#ff9a00">10.Видео на тему разработки</h2>
+            <button class="button" style="vertical-align: middle"><span>YouTube</span></button>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qiUfLIbbedw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
