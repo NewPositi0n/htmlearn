@@ -9,6 +9,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <title>Попытка</title>
+        
         <style>
             @media (min-width:768px) and (max-width:2000px) {
                 body {background-color: #fff8dc;
@@ -218,10 +219,40 @@ padding-right: 25px;
 opacity: 1;
 right: 0;
 }
+            .modal{
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top:0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: burlywood;
+            }
+            .modal-content{
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid black;
+                width: 80%;
+                box-shadow: 5px 10px 5px #666;
+            }
+            .close{
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .close: hover, .close: focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
     </style>
         </head>
     <body>
-
+        
         <h1 style="color:#483d8b">Если попытка - не пытка, то что пытка?</h1>
 		<h2 style="color:#b22222">Здесь представлены мои первые шаги в освоении html</h2>
         <h3 style="color:#800000"><del>Ну, или не первые...</del></h3>
@@ -280,8 +311,8 @@ right: 0;
             <h3 style="color:#c86700">7.Главные герои мультсериала "Южный парк"</h3>
             <img class="o5" alt="Кайл, Эрик, Кенни, Стэн" src="https://www.soyuz.ru/public/uploads/files/2/7386736/201907192017277ba9271996.jpg" />
                 <br><a href="#" class="roll"></a>
-                <br><img src="https://static.wikia.nocookie.net/southpark/images/3/3f/Superherores-super-craig.png/revision/latest?cb=20170531063739" alt="СуперКрейг">
-                    <img src="https://static.wikia.nocookie.net/southpark/images/3/3f/Superherores-super-craig.png/revision/latest?cb=20170531063739" alt="СуперКрейг" class="mir">
+                <br><img src="https://i1.sndcdn.com/avatars-FauphSPbJ56uyNzt-qrJCnw-t500x500.jpg" alt="СуперКрейг">
+                    <img src="https://i1.sndcdn.com/avatars-FauphSPbJ56uyNzt-qrJCnw-t500x500.jpg" alt="СуперКрейг" class="mir">
             </section>
         
         <section id="21_id" class="animate__animated animate__fadeInDown">
@@ -424,8 +455,24 @@ right: 0;
 
         <section id="right" class="animate__animated animate__fadeInDown" id="step2">
             <h2 style="color:#ff9a00">10.Видео на тему разработки</h2>
-            <button class="button" style="vertical-align: middle"><span>YouTube</span></button>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qiUfLIbbedw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button id="button" class="button" style="vertical-align: middle"><span>YouTube</span></button>
+            <div id="myModal" class="modal"><div class="modal-content"><span class="close">&times;</span><iframe width="560" height="315" src="https://www.youtube.com/embed/qiUfLIbbedw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+            <script>
+                let modal = document.getElementById('myModal'),
+                button = document.getElementById('button'),
+                span = document.getElementsByClassName('close')[0];
+                button.onclick=function(){
+                    moodal.style.display="block";
+                }
+                span.onclick=function(){
+                    modal.style.display="none";
+                }
+                window.onclick=function(event){
+                    if(event.target==modal){
+                        modal.style.display="none";
+                    }
+                }
+            </script>
             </section>
 
         <section id="center" class="animate__animated animate__fadeInDown" id="step2">
