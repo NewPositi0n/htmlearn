@@ -353,10 +353,11 @@ right: 0;
                     body.style.backgroundColor=colors[Math.floor(Math.random()*colors.length)];
                 }
             }
+            function greet(){console.log('Change the color');}
         </script>
         </head>
        <body>
-        <input type="button" id="input_button_bg_change" value="Change"/>
+           <input onclick="greet()" type="button" id="input_button_bg_change" value="Change"/>
         <h1 style="color:#483d8b">Если попытка - не пытка, то что пытка?</h1>
 		<h2 style="color:#b22222">Здесь представлены мои первые шаги в освоении html</h2>
         <h3 style="color:#800000"><del>Ну, или не первые...</del></h3>
@@ -409,7 +410,8 @@ right: 0;
         
         <section id="right" class="animate__animated animate__fadeInDown" id="step2">
             <h2 style="color:#c92200">6.Поисковая система Яндекс</h2>
-            <a class="Ya" href="http://Yandex.ru" target="_blank">Яндекс</a>
+            <a class="Ya" href="http://Yandex.ru" target="_blank" onclick="greet()">Яндекс</a>
+            <script>function greet(){console.log('Open Yandex');}</script>
             </section>
         
         <section id="left" class="animate__animated animate__fadeInDown" id="step2">
@@ -475,10 +477,11 @@ function showSlides(n) {
             <input name="name" type="text" placeholder="Ваше имя*" class="txt">
             <br><input value="" id="tel" class="txt" placeholder="Ваш номер телефона*">
             <br><textarea cols="32" name="message" rows="5" class="msg" required>Ваше сообщение:</textarea> 
-            <br><input type="submit" value="Отправить" class="btn btno"/>
+            <br><input onclick="greet()" type="submit" value="Отправить" class="btn btno"/>
             </fieldset>        
     </form>
             <script>
+                function greet(){console.log('Submit form');}
 window.addEventListener("DOMContentLoaded", function() {
 function setCursorPosition(pos, elem) {
     elem.focus();
@@ -659,14 +662,14 @@ function mask(event) {
                         modal.style.display="none";
                     }
                 }
-            </script>
+                </script>
             
 
         <section id="center" class="animate__animated animate__fadeInDown" id="step2">
             <h1 style="color:#ff837f">11.Яндекс Карта</h1>
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/federalnoye_gosudarstvennoye_byudzhetnoye_obrazovatelnoye_uchrezhdeniye_vysshego_obrazovaniya_irkutskiy_gosudarstvenny_universitet_putey_soobshcheniya/1156333008/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Федеральное государственное бюджетное образовательное учреждение высшего образования Иркутский государственный университет путей сообщения</a><a href="https://yandex.ru/maps/63/irkutsk/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Иркутске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBRLTHPA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/federalnoye_gosudarstvennoye_byudzhetnoye_obrazovatelnoye_uchrezhdeniye_vysshego_obrazovaniya_irkutskiy_gosudarstvenny_universitet_putey_soobshcheniya/1156333008/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Федеральное государственное бюджетное образовательное учреждение высшего образования Иркутский государственный университет путей сообщения</a><a href="https://yandex.ru/maps/63/irkutsk/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Иркутске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBRLTHPA" width="560" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </section>
-    </body>
+           </body>
 </html>
 
         
