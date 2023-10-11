@@ -108,12 +108,11 @@
 table.tablichka {
     font-family: "Lucida Console", Monaco, monospace;
     border: 2px solid #A12033;
-    width: 100%;
+    width: 130px;
     height: 130px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
 }
 table.tablichka td, table.tablichka th {
   border: 2px solid #A12033;
@@ -133,8 +132,8 @@ table.tablichka thead th {
     text-align: center;
 }
 
-@media only screen and (max-width: 480px) { 
-table { 
+@media only screen and (max-width: 500px) { 
+tablchka { 
 width: 100%; 
 } 
 }
