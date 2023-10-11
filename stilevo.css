@@ -1,0 +1,133 @@
+
+            .colortext {
+     color: #ff7f50 
+   }
+    .step {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 5px;
+        border: 3px solid #ffd700;
+        text-align: center;
+    }
+    .bdr{
+        border: 3px dashed #ffd700;
+        background: #add8e6}
+    .step2 {
+        text-align: center;
+        padding: 2px;
+    }
+    .left { text-align: left; }
+    .right { text-align: right; }
+    .center { text-align: center; }
+    
+    h1 {font-family: sans-serif, fantasy}
+    h2 {font-family: sans-serif, fantasy}
+    h3 {font-family: sans-serif, fantasy}
+    h4 {font-family: sans-serif, fantasy}
+    h5 {font-family: sans-serif, fantasy}
+    h6 {font-family: sans-serif, fantasy}
+    
+    p {
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        font-size: 12pt;
+    }
+    
+    li {
+        font-family: Courier New, monospace;
+        font-size: 15pt;
+    }
+            .lcase {text-transform: lowercase;}
+            a {
+    color: #000000; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+   }
+   a:visited {
+    color: #8F8E8E; /* Цвет посещённой ссылки */
+   } 
+   a:hover {
+       color: #CE242B;}
+            ol.hr li {
+                display: inline;
+                margin-right: 5px;
+                }
+            .img1{list-style-image: url(https://img.icons8.com/small/2x/system-report.png);}
+            .img2{list-style-image: url(https://img.icons8.com/small/2x/console.png);}
+            .img3{list-style-image: url(https://img.icons8.com/small/2x/railroad-car.png);}
+            .img4{list-style-image: url(https://img.icons8.com/small/2x/active-directory.png);}
+            .img5{list-style-image: url(https://img.icons8.com/small/2x/combi-ticket.png);}
+            
+            .hc{text-align: center;}
+            .hc > ul {display: inline-block;
+                        text-align: left;}
+            
+            form{
+  margin:0 auto;
+  max-width:50%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:10px; 
+  background: #ffc0cb;
+  -webkit-box-shadow:  0px 0px 15px 0px #ffb6c1;        
+  box-shadow:  0px 0px 15px 0px #db7093;  
+}
+
+.txt{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:#666 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:10px;
+  margin-bottom:30px;  
+}
+.msg:focus,
+.txt:focus{
+  outline:none;
+   border:#666 2px solid;
+   }
+.msg{
+    background: #ffe4e1; 
+    width:100%;
+    height: 120px;
+    border:#666 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+
+
+table.tablichka {
+    font-family: "Lucida Console", Monaco, monospace;
+    border: 2px solid #A12033;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.tablichka td, table.tablichka th {
+  border: 2px solid #A12033;
+  padding: 3px 4px;
+}
+table.tablichka thead {
+  background: #A12033;
+}
+table.tablichka thead th {
+  font-size: 18px;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.sp{
+    text-align: center;
+}
