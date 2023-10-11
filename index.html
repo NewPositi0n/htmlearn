@@ -1,391 +1,43 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="ru">
     <head>
         <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    rel="stylesheet" href="stilevo.css">
         <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <title>Попытка</title>
-        
-        <style>
-            @media (min-width:768px) and (max-width:2000px) {
-                body {background-color: #fff8dc;
-                color: chocolate;
-                line-height: 1.4;}
-            }
-            
-            @media (max-width:757px) {
-               body {background-color: #77dde7;
-                color: darkred;
-                line-height: 1.4;
-                font-size: 13px;}
-            }
-            
-            table {
-                border-collapse: collapse;
-                width: 100%
-            }
-            th, td {
-                text-align: center;
-                padding: 8px;
-            }
-   .colortext {
-     color: #ff7f50 
-   }
-    #step {
-        margin: 5%;
-        padding: 5px;
-        border: 3px solid #ffd700;
-    }
-            .bdr{
-                border: 3px dashed #ffd700;
-            background: #add8e6}
-    #step2 {
-        margin: 2%;
-        padding: 2px;
-    }
-    #left { text-align: left; }
-   #right { text-align: right; }
-   #center { text-align: center; }
-            h1, h2, h3, h4, h5, h6 {font-family: Luminari, fantasy}
-            p {
-                font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-                font-size: 12pt;
-            }
-            li {
-                font-family: Courier New, monospace;
-                font-size: 15pt;
-            }
-            .lcase {text-transform: lowercase;}
-            .bl {animation: blink 2s infinite;}
-            @keyframes blink {
-    from {opacity: 1;}
-    to {opacity: 0;}
-   }
-            a {
-    color: #000000; /* Цвет обычной ссылки */ 
-    text-decoration: none; /* Убираем подчёркивание у ссылок */
-   }
-   a:visited {
-    color: #8F8E8E; /* Цвет посещённой ссылки */
-   } 
-   a:hover {
-       color: #CE242B;}
-            ol.hr li {
-                display: inline;
-                margin-right: 5px;
-                }
-            .img1{list-style-image: url(https://img.icons8.com/small/2x/system-report.png);}
-            .img2{list-style-image: url(https://img.icons8.com/small/2x/console.png);}
-            .img3{list-style-image: url(https://img.icons8.com/small/2x/railroad-car.png);}
-            .img4{list-style-image: url(https://img.icons8.com/small/2x/active-directory.png);}
-            .img5{list-style-image: url(https://img.icons8.com/small/2x/combi-ticket.png);}
-            
-            .hc{text-align: center;}
-            .hc > ul {display: inline-block;
-                        text-align: left;}
-            
-            .Ya{border:1px solid #ccc;
-	background:#eaeaea; 
-	padding: 10px 40px; 
-	text-decoration: none;
-            }
-            .o5{filter: alpha(Opacity=50);
-                opacity: 0.5;
-            width: 100%;}
-            .roll{background: url(https://i1.sndcdn.com/artworks-000335162463-el6h3u-t500x500.jpg); 
-                display: block; 
-                width: 100%; 
-                height: 500px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                }
-            .roll:hover {
-                background: url(http://pm1.narvii.com/8096/bc6f06fa2d9e22febfa88fa29dceb24f6708d981r1-500-500v2_00.jpg);
-                background-repeat: no-repeat;
-            background-size: contain;}
-            
-            .mir{transform: scale(-1, 1);}
-            
-            form{
-  margin:0 auto;
-  max-width:50%;
-  box-sizing:border-box;
-  padding:40px;
-  border-radius:10px; 
-  background: #ffc0cb;
-  -webkit-box-shadow:  0px 0px 15px 0px #ffb6c1;        
-  box-shadow:  0px 0px 15px 0px #db7093;  
-}
-
-.txt{
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:#666 2px solid;
-  box-sizing:border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-size:18px; 
-  padding:10px;
-  margin-bottom:30px;  
-}
-.msg:focus,
-.txt:focus{
-  outline:none;
-   border:#666 2px solid;
-   }
-.msg{
-    background: #ffe4e1; 
-    width:100%;
-    height: 120px;
-    border:#666 2px solid;
-    box-sizing:border-box;
-    -moz-border-radius: 3px;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; 
-    display:block;
-    padding:10px;
-    margin-bottom:30px;
-    overflow:hidden;
-}
-
-.btn{
-  height:50px;
-  width:60%;
-  border-radius:3px;
-  border:#666 0px solid;
-  box-sizing:border-box;
-  padding:10px;
-  background:#dda0dd;
-  color:#666;
-  font-family: 'Open Sans', sans-serif;  
-  font-weight:400;
-  font-size: 16pt;
-  transition:background .4s;
-  cursor:pointer;
-}
-
-.btn:hover{
-  background:#d8bfd8
-}
-
-            .btno{border-radius: 40%;}
-            
-            .tbl tbody tr:nth-child(odd){background: #add8e6;}
-            .tbl tbody tr:nth-child(even){background: #dcdcdc;}
-            .tbl td{text-align:center;}
-            
-.button {
-display: inline-block;
-border-radius: 25px;
-background-color: #f4511e;
-border: none;
-color: #FFFFFF;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
-transition: all 0.5s;
-cursor: pointer;
-margin: 5px;
-}
-
-.button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-
-.button span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-.button:hover span {
-padding-right: 25px;
-}
-
-.button:hover span:after {
-opacity: 1;
-right: 0;
-}
-            .modal{
-                display: none;
-                position: fixed;
-                z-index: 1;
-                left: 0;
-                top:0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgba(0,0,0,0.8);
-            }
-            .modal-content{
-                background-color: #fefefe;
-                margin: 15% auto;
-                padding: 20px;
-                border: 1px solid black;
-                width: 80%;
-                box-shadow: 5px 10px 5px #666;
-            }
-            .close{
-                color: #aaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            .close: hover, .close: focus {
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-            }
-                       
-            .slider{
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    height: 100%;
-    margin-bottom: 15px;
-}
-/* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border: none !important;
-    box-shadow: none !important;
-}
-/* Кнопки вперед и назад */
-.slider .prev, .slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.slider .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* При наведении на кнопки добавляем фон кнопок */
-.slider .prev:hover,
-.slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-/* Заголовок слайда */
-.slideText {
-    position: absolute;
-    color: #fff;
-    font-size: 35px;
-    /* Выравнивание текста по горизонтали и по вертикали*/
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* Тень*/
-    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
-}
-/* Кружочки */
-.slider-dots {
-    text-align: center;
-}
-.slider-dots_item{
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots_item:hover {
-    background-color: #aaa;
-}
-/* Анимация слайдов */
-.slider .item {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-    </style>
-       
-        <script type="text/javascript">
-            window.onload=function() {
-                var button=document.getElementById('input_button_bg_change');
-                var body=document.getElementsByTagName('body')[0];
-                var colors=['#FFA07A', '#FFB6C1', '#DB7093', '#FFDAB9', '#DCDCDC'];
-                button.onclick=function() {
-                    body.style.backgroundColor=colors[Math.floor(Math.random()*colors.length)];
-                }
-            }
-            function greet(){console.log('Change the color');}
-        </script>
-        </head>
-       <body>
-           <input onclick="greet()" type="button" id="input_button_bg_change" value="Change"/>
+        <title>Информейшн</title>
+    </head>
+    <body>
         <h1 style="color:#483d8b">Если попытка - не пытка, то что пытка?</h1>
 		<h2 style="color:#b22222">Здесь представлены мои первые шаги в освоении html</h2>
         <h3 style="color:#800000"><del>Ну, или не первые...</del></h3>
         
-        	
-        <section id="right" class="animate__animated animate__fadeInDown">
-                <h1 style="color:#cd5c5c">1.Цитата из фильма<u> Майор Гром: Чумной доктор</u></h1>
-		        <div class="bl">
+        <div class="right">
+        <section class="right">
+                <h1 style="color:#cd5c5c">Цитата из фильма<u> Майор Гром: Чумной доктор</u></h1>
+		        <div>
                     <p><i>-Супергерой - не тот, у кого суперспособности, а тот, кто победил суперзлодея.</i></p></div>
 		    </section>
-		
-        <section class="animate__animated animate__fadeInDown" id="step">
-            <div id="center">
-            <h1>2.ЛИНЕЙНЫЕ ОДНОРОДНЫЕ <span class=colortext>ДИФФЕРНЦИАЛЬНЫЕ</span> УРАВНЕНИЯ С ПОСТОЯННЫМИ КОЭФФИЦИЕНТАМИ  ВЫСШИХ ПОРЯДКОВ</h1>
+            
+        </div>
+        
+        <section class="step">
+            <div class="center">
+            <h1>АНЕКДОТ<br><span class=colortext>ОЧЕНЬ СМЕШНОЙ</span><br> НО ЭТО НЕ ТОЧНО</h1>
                 </div>
                 <div class="lcase">
 		<p>
-            <em>Линейные Однородные Дифференциальные Уравнения С Постоянными Коэффициентами</em> - Наиболее Изученный Тип Дифференциальных Уравнений Высших Порядков. <br>Многие Задачи Техники И Естествознания Приводят К Линейным Однородным Дифференциальным Уравнениям.
+            Маленький одноногий мальчик встал не с той ноги и упал :)
         </p>
                 </div>
-            <h2 style="color:#ff8b41"><strong>3.Основные теоремы о структуре общего решения уравнения. Определитель Вронского</strong></h2>
+            <h2 style="color:#ff8b41">А сейчас немного математики</h2>
                 <p>
                     Линейное однородное уравнение n-го порядка с постоянными коэффициентами имеет вид:<br /> <span class="bdr"><b>y<sup>(n)</sup>+a<sub>1</sub>y<sup>(n-1)</sup>+a<sub>2</sub>y<sup>(n-2)</sup>+...+a<sub>n-1</sub>y'+a<sub>n</sub>y=0</b></span><br /> Где все коэффициенты - числа(в частности, некоторые могут быть нулями).
             </p>
             </section>
         
-        <section id="left" class="animate__animated animate__fadeInDown" id="step2">
-            <h3 style="color:#ff6831">4.Список студийных альбомов Linkin Park</h3>
+        <div class="left" class="step2">
+        <section>
+            <h3 style="color:#ff6831">Список студийных альбомов Linkin Park</h3>
             <ol class="hr">
                 <li><a href="#">Hybrid Theory</a></li>
                 <li><a href="#">Meteora</a></li>
@@ -396,9 +48,10 @@ right: 0;
                 <li><a href="#">One More Light</a></li>
             </ol>
             </section>
-        
-        <section class="hc" class="animate__animated animate__fadeInDown">
-        <h3 style="color:#9c5b00">5.Факультеты Иркутского Государственного Университета Путей Сообщения</h3>
+        </div>
+
+        <section class="hc">
+        <h3 style="color:#9c5b00">Факультеты Иркутского Государственного Университета Путей Сообщения</h3>
         <ul>
             <li class="img1">Транспортные Системы</li>
             <li class="img2">Управление на транспорте и информационные технологии</li>
@@ -406,270 +59,70 @@ right: 0;
             <li class="img4">Системы Обеспечения транспорта</li>
             <li class="img5">Экономика и управление</li>
         </ul>
-        </section>  
+        </section>
         
-        <section id="right" class="animate__animated animate__fadeInDown" id="step2">
-            <h2 style="color:#c92200">6.Поисковая система Яндекс</h2>
-            <a class="Ya" href="http://Yandex.ru" target="_blank" onclick="greet()">Яндекс</a>
-            <script>function greet(){console.log('Open Yandex');}</script>
-            </section>
+        <section>
+            <h3 style="color:#c86700">Главные герои мультсериала "Южный парк"</h3>
+            <p class="sp">
+            <img alt="Кайл, Cтэн, Эрик, Кенни" src="https://www.soyuz.ru/public/uploads/files/2/7470727/202108051822065c191d042b.jpg" />
+            </p>
+        </section>
         
-        <section id="left" class="animate__animated animate__fadeInDown" id="step2">
-            <h3 style="color:#c86700">7.Главные герои мультсериала "Южный парк"</h3>
-            <div class="slider">
-            <div class="item"><img class="o5" alt="Кайл, Эрик, Кенни, Стэн" src="https://www.soyuz.ru/public/uploads/files/2/7386736/201907192017277ba9271996.jpg"></div>
-            <div class="item"><img src="https://i1.sndcdn.com/avatars-FauphSPbJ56uyNzt-qrJCnw-t500x500.jpg" alt="СуперКрейг"></div>
-            <div class="item"><img src="https://i1.sndcdn.com/avatars-FauphSPbJ56uyNzt-qrJCnw-t500x500.jpg" alt="СуперКрейг" class="mir"></div>
-            <div class="item"><img src=https://ixbt.online/live/topics/preview/00/02/66/41/e90114e00b.webp></div>
-            <div class="item"><img src=https://sun9-85.userapi.com/c10306/u51096079/118834629/x_84ba5c4f.jpg></div>
-            <div class="item"><img src=https://www.soyuz.ru/public/uploads/files/2/7224622/201809131305198db900685a.jpg></div>
-            <div class="item"><a href="#" class="roll"></a></div>
-            <a class="prev" onclick="minusSlide()">&#10094;</a>
-            <a class="next" onclick="plusSlide()">&#10095;</a>
-            </div>
-            <div class="slider-dots">
-                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(4)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(5)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(6)"></span>
-                <span class="slider-dots_item" onclick="currentSlide(7)"></span>
-            </div>
-            <script>
-                var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlide() {
-    showSlides(slideIndex += 1);
-}
-function minusSlide() {
-    showSlides(slideIndex -= 1);  
-}
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("item");
-    var dots = document.getElementsByClassName("slider-dots_item");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-            </script>
-            
-                </section>
-        
-        <section id="21_id" class="animate__animated animate__fadeInDown">
-        <form name="form">
-            <fieldset> <legend><h1 style="color:#89004e">8.Форма обратной связи</h1></legend>
+        <br><section class="21_id">
+        <form name="form"
+            <fieldset> <legend><h1 style="color:#89004e">Форма обратной связи</h1></legend>
             <input name="name" type="text" placeholder="Ваше имя*" class="txt">
-            <br><input value="" id="tel" class="txt" placeholder="Ваш номер телефона*">
+            <br><input nane="phone" type="text" placeholder="Ваш номер телефона*" class="txt">
             <br><textarea cols="32" name="message" rows="5" class="msg" required>Ваше сообщение:</textarea> 
-            <br><input onclick="greet()" type="submit" value="Отправить" class="btn btno"/>
+            <br><input type="submit" value="Отправить" class="btn btno"/>
             </fieldset>        
     </form>
-            <script>
-                function greet(){console.log('Submit form');}
-window.addEventListener("DOMContentLoaded", function() {
-function setCursorPosition(pos, elem) {
-    elem.focus();
-    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-    else if (elem.createTextRange) {
-        var range = elem.createTextRange();
-        range.collapse(true);
-        range.moveEnd("character", pos);
-        range.moveStart("character", pos);
-        range.select()
-    }
-}
-function mask(event) {
-    var matrix = "+7 (___) ___ ____",
-        i = 0,
-        def = matrix.replace(/\D/g, ""),
-        val = this.value.replace(/\D/g, "");
-    if (def.length >= val.length) val = def;
-    this.value = matrix.replace(/./g, function(a) {
-        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-    });
-    if (event.type == "blur") {
-        if (this.value.length == 2) this.value = ""
-    } else setCursorPosition(this.value.length, this)
-};
-    var input = document.querySelector("#tel");
-    input.addEventListener("input", mask, false);
-    input.addEventListener("focus", mask, false);
-    input.addEventListener("blur", mask, false);
-});
-  </script>
-
-            </section>
-        
-        <section class="21_c" class="animate__animated animate__fadeInDown" id="step2">
-            <table border="1" cellspacing="0" cellpadding="15" width="90%" height="130" class="tbl">
-                <caption><h2 style="color:bc008e">9.Расписание группы ПИ 1-21-1</h2></caption>
-                <tr>
-			<td>Время</td>
-			<td>Понедельник</td>
-			<td>Вторник</td>
-			<td>Среда</td>
-			<td>Четверг</td>
-			<td>Пятница</td>
-			<td>Суббота</td>
-		</tr>
-		<tr>
-			<td rowspan="2">8:30
-10:00</td>
-			<td rowspan="2"></td>
-			<td>Иностранный язык (1п/г)</td>
-			<td>Объектно-Ориентированное программирование (2п/г)</td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td rowspan="2">10:10
-11:40</td>
-			<td></td>
-			<td>Вычислительная математика (1п/г)</td>
-			<td>Программирование (2п/г)</td>
-			<td>Вычислительная математика</td>
-			<td></td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td>Общая физическая подготовка</td>
-			<td></td>
-			<td>Иностранный язык (2п/г)</td>
-			<td>Иностранный язык (2п/г)</td>
-			<td>Иностранный язык (1п/г)</td>
-		</tr>
-		<tr>
-			<td rowspan="2">12:10
-13:30</td>
-			<td></td>
-			<td>Программирование (1п/г)</td>
-			<td>Общая физическая подготовка</td>
-			<td>Математический анализ</td>
-			<td>Программирование</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Программирование</td>
-			<td>Программирование (1п/г)</td>
-			<td>Объектно-Ориентированное программирование (2п/г)</td>
-			<td>История (История России, Всеобщая история)</td>
-			<td>Иностранный язык (1п/г)</td>
-			<td>Математический Анализ</td>
-		</tr>
-		<tr>
-			<td rowspan="2">13:50
-15:20</td>
-			<td>Объектно-Ориентированное программирование (1п/г)</td>
-			<td>Программирование (2/г)</td>
-			<td>Программирование (1п/г)</td>
-			<td>Математический анализ</td>
-			<td>Объектно-Ориентированное программирование</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Типы и Структуры Данных</td>
-			<td>Программирование (1п/г)</td>
-			<td>Объектно-Ориентированное программирование</td>
-			<td>История (История России, Всеобщая история)</td>
-			<td>Программирование (2п/г)</td>
-			<td>Математический анализ</td>
-		</tr>
-		<tr>
-			<td rowspan="2">15:30
-17:00</td>
-			<td>Типы и Структуры Данных (1п/г)</td>
-			<td>Вычислительная математика (2п/г)</td>
-			<td></td>
-			<td>История (История России, Всеобщая история)</td>
-			<td>Вычислительная математика</td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td>Типы и Структуры данных (2п/г)</td>
-			<td></td>
-			<td>Объектно-Ориентированное программирование (1/пг)</td>
-			<td></td>
-			<td>Программирование (2п/г)</td>
-		</tr>
-		<tr>
-			<td rowspan="2">17:10
-18:40</td>
-			<td>Типы и Структуры Данных</td>
-			<td>Иностранный язык (2п/г)</td>
-			<td></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td>Типы и Структуры Данных (1п/г)</td>
-		</tr>
-		<tr>
-			<td rowspan="2">18:45
-20:15</td>
-			<td>Типы и Структуры Данных (2п/г)</td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-            </table>
-            </section>
-
-        
-            <h2 style="color:#ff9a00">10.Видео на тему разработки</h2>
-            <button id="button" class="button" style="vertical-align: middle"><span>YouTube</span></button>
-            <div id="myModal" class="modal"><div class="modal-content"><span class="close">&times;</span><iframe width="560" height="315" src="https://www.youtube.com/embed/qiUfLIbbedw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
-            <script>
-                let modal = document.getElementById('myModal'),
-                button = document.getElementById('button'),
-                span = document.getElementsByClassName('close')[0];
-                button.onclick=function(){
-                    modal.style.display="block";
-                }
-                span.onclick=function(){
-                    modal.style.display="none";
-                }
-                window.onclick=function(event){
-                    if(event.target==modal){
-                        modal.style.display="none";
-                    }
-                }
-                </script>
-            
-
-        <section id="center" class="animate__animated animate__fadeInDown" id="step2">
-            <h1 style="color:#ff837f">11.Яндекс Карта</h1>
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/federalnoye_gosudarstvennoye_byudzhetnoye_obrazovatelnoye_uchrezhdeniye_vysshego_obrazovaniya_irkutskiy_gosudarstvenny_universitet_putey_soobshcheniya/1156333008/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Федеральное государственное бюджетное образовательное учреждение высшего образования Иркутский государственный университет путей сообщения</a><a href="https://yandex.ru/maps/63/irkutsk/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Иркутске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBRLTHPA" width="560" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </section>
-           </body>
+        
+        <section class="21_c" class="step2">
+            <table class="tablichka">
+                <caption><h2>Табличка)</h2></caption>
+                <thead>
+                <tr>
+			<td colspan="6" style="color:#ffffff">Мой топ 3 в:</td>
+		</tr>
+                </thead>
+		<tbody>
+        <tr>
+			<td>Игры</td>
+			<td>Фильмы</td>
+			<td>Сериалы</td>
+			<td>Мультсериалы</td>
+			<td>Музыка</td>
+			<td>Книги</td>
+		</tr>
+		<tr>
+			<td>Watch Dogs 2</td>
+			<td>Майор Гром: Чумной Доктор</td>
+			<td>Мистер Робот</td>
+			<td>Южный Парк</td>
+			<td>Linkin Park</td>
+			<td>Ирвин Уэлш "Эйсид-Хаус"</td>
+		</tr>
+		<tr>
+			<td>Серия игр Saints Row</td>
+			<td>Шаг вперёд</td>
+			<td>Теория Большого Взрыва</td>
+			<td>Рик и Морти</td>
+			<td>ATL</td>
+			<td>Оскар Уайльд "Портрет Дориана Грея"</td>
+		</tr>
+		<tr>
+			<td>Detroit: Become Human</td>
+			<td>Люди икс: Первый класс</td>
+			<td>Благие знамения</td>
+			<td>Футурамма</td>
+			<td>Mike Shinoda</td>
+			<td>Эрнест Клайн "Первому игроку приготовиться"</td>
+		</tr>
+                </tbody>
+            </table>
+    </body>
 </html>
 
         
